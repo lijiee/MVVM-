@@ -17,6 +17,12 @@
 		6A0E9A0D1D8142B500CF9241 /* ReactiveCocoaETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A0C1D8142B500CF9241 /* ReactiveCocoaETests.m */; };
 		6A0E9A181D8142B500CF9241 /* ReactiveCocoaEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A171D8142B500CF9241 /* ReactiveCocoaEUITests.m */; };
 		6A0E9A271D81563200CF9241 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A261D81563200CF9241 /* TwoViewController.m */; };
+		6A8675881DC332A20079C570 /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8675871DC332A20079C570 /* FViewController.m */; };
+		6A86758E1DC3333C0079C570 /* PhotosGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86758A1DC3333C0079C570 /* PhotosGrid.m */; };
+		6A86758F1DC3333C0079C570 /* PhotosGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86758C1DC3333C0079C570 /* PhotosGridCell.m */; };
+		6A8675901DC3333C0079C570 /* PhotosGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A86758D1DC3333C0079C570 /* PhotosGridCell.xib */; };
+		6A8675931DC339DE0079C570 /* NewChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8675921DC339DE0079C570 /* NewChange.m */; };
+		6A8675961DC352E60079C570 /* UINavigationItem+CustomBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8675951DC352E60079C570 /* UINavigationItem+CustomBackButton.m */; };
 		6A95E1E51D9510BF0057C163 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95E1E41D9510BF0057C163 /* WKWebViewViewController.m */; };
 		6A95E1E71D95110B0057C163 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95E1E61D95110B0057C163 /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +63,17 @@
 		6A0E9A191D8142B500CF9241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A0E9A251D81563200CF9241 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		6A0E9A261D81563200CF9241 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		6A8675861DC332A20079C570 /* FViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FViewController.h; sourceTree = "<group>"; };
+		6A8675871DC332A20079C570 /* FViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FViewController.m; sourceTree = "<group>"; };
+		6A8675891DC3333C0079C570 /* PhotosGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosGrid.h; sourceTree = "<group>"; };
+		6A86758A1DC3333C0079C570 /* PhotosGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosGrid.m; sourceTree = "<group>"; };
+		6A86758B1DC3333C0079C570 /* PhotosGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosGridCell.h; sourceTree = "<group>"; };
+		6A86758C1DC3333C0079C570 /* PhotosGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosGridCell.m; sourceTree = "<group>"; };
+		6A86758D1DC3333C0079C570 /* PhotosGridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosGridCell.xib; sourceTree = "<group>"; };
+		6A8675911DC339DE0079C570 /* NewChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewChange.h; sourceTree = "<group>"; };
+		6A8675921DC339DE0079C570 /* NewChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewChange.m; sourceTree = "<group>"; };
+		6A8675941DC352E60079C570 /* UINavigationItem+CustomBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomBackButton.h"; sourceTree = "<group>"; };
+		6A8675951DC352E60079C570 /* UINavigationItem+CustomBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomBackButton.m"; sourceTree = "<group>"; };
 		6A95E1E31D9510BF0057C163 /* WKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewViewController.h; sourceTree = "<group>"; };
 		6A95E1E41D9510BF0057C163 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
 		6A95E1E61D95110B0057C163 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -143,6 +160,17 @@
 				6A0E9A261D81563200CF9241 /* TwoViewController.m */,
 				6A95E1E31D9510BF0057C163 /* WKWebViewViewController.h */,
 				6A95E1E41D9510BF0057C163 /* WKWebViewViewController.m */,
+				6A8675861DC332A20079C570 /* FViewController.h */,
+				6A8675871DC332A20079C570 /* FViewController.m */,
+				6A8675911DC339DE0079C570 /* NewChange.h */,
+				6A8675921DC339DE0079C570 /* NewChange.m */,
+				6A8675891DC3333C0079C570 /* PhotosGrid.h */,
+				6A8675941DC352E60079C570 /* UINavigationItem+CustomBackButton.h */,
+				6A8675951DC352E60079C570 /* UINavigationItem+CustomBackButton.m */,
+				6A86758A1DC3333C0079C570 /* PhotosGrid.m */,
+				6A86758B1DC3333C0079C570 /* PhotosGridCell.h */,
+				6A86758C1DC3333C0079C570 /* PhotosGridCell.m */,
+				6A86758D1DC3333C0079C570 /* PhotosGridCell.xib */,
 				6A0E99FB1D8142B500CF9241 /* Main.storyboard */,
 				6A0E99FE1D8142B500CF9241 /* Assets.xcassets */,
 				6A0E9A001D8142B500CF9241 /* LaunchScreen.storyboard */,
@@ -286,6 +314,7 @@
 			files = (
 				6A0E9A021D8142B500CF9241 /* LaunchScreen.storyboard in Resources */,
 				6A0E99FF1D8142B500CF9241 /* Assets.xcassets in Resources */,
+				6A8675901DC3333C0079C570 /* PhotosGridCell.xib in Resources */,
 				6A0E99FD1D8142B500CF9241 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,9 +390,14 @@
 			files = (
 				6A0E99FA1D8142B500CF9241 /* ViewController.m in Sources */,
 				6A0E99F71D8142B500CF9241 /* AppDelegate.m in Sources */,
+				6A86758E1DC3333C0079C570 /* PhotosGrid.m in Sources */,
+				6A8675931DC339DE0079C570 /* NewChange.m in Sources */,
+				6A8675961DC352E60079C570 /* UINavigationItem+CustomBackButton.m in Sources */,
 				6A0E99F41D8142B500CF9241 /* main.m in Sources */,
 				6A95E1E51D9510BF0057C163 /* WKWebViewViewController.m in Sources */,
 				6A0E9A271D81563200CF9241 /* TwoViewController.m in Sources */,
+				6A86758F1DC3333C0079C570 /* PhotosGridCell.m in Sources */,
+				6A8675881DC332A20079C570 /* FViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

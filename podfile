@@ -5,4 +5,6 @@ platform :ios, '7.0'
 target 'ReactiveCocoaE' do
     pod 'ReactiveCocoa'
 pod ‘Masonry’
+pod 'TZImagePickerController'
+pod ‘BlocksKit’
 end
