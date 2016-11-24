@@ -187,7 +187,7 @@ static NSString *CellIdentifier = @"";
         } else {
             // 添加打开ImagePicker的代码
             
-            [NewChange showImagePickerFor:nil phoneNum:9 videoNum:0 sourceArr:self.gridSource1 finishPick:^(NSArray *sourceArr,NSArray *date) {
+            [NewChange showImagePickerFor:nil phoneNum:1 videoNum:0 sourceArr:self.gridSource1 finishPick:^(NSArray *sourceArr,NSArray *date) {
                 // 这里 的 gridSource 是 ALAsset 类型的数组
                 self.gridSource = [sourceArr mutableCopy];
                 self.gridSource1 = [date mutableCopy];

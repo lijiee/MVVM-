@@ -10,6 +10,8 @@
 #import "ReactiveCocoa.h"
 #import "Masonry.h"
 #import "TwoViewController.h"
+#import "LZLineChartView.h"
+#import "LZLineChartSubView.h"
 @interface ViewController ()
 @property (nonatomic,strong)UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
@@ -66,10 +68,22 @@
     [subject sendNext:@2];
 
     
+    LZLineChartView *lineView = [[LZLineChartView alloc]initWithFrame:CGRectMake(0, 100, 200, 200) YdataArray:[@[@1,@2,@3] mutableCopy]XdataArray:[@[@"1",@"2",@"3"] mutableCopy]currentTitle:@"nini" currentValue:@"eeee" lineChartType:LineChartType_Step];
+
+    [self.view addSubview:lineView];
     
+    LZLineChartView *lineView1 = [[LZLineChartView alloc]initWithFrame:CGRectMake(0, 300, 200, 200) YdataArray:[@[@1,@2,@3] mutableCopy]XdataArray:[@[@"1",@"2",@"3"] mutableCopy]currentTitle:@"nini" currentValue:@"eeee" lineChartType:LineChartType_Bust];
     
+    [self.view addSubview:lineView1];
     
+    LZLineChartSubView *lineView2 = [[LZLineChartSubView alloc]initWithFrame:CGRectMake(210, 100, 200, 200) YdataArray:[@[@1,@2,@3] mutableCopy] XdataArray:[@[@"1",@"2",@"3"] mutableCopy] convertYdataArray:[@[@"1",@"2",@"3"] mutableCopy] XSpacing:3 base:2 convertBase:2 currentTitle:@"df" currentValue:@"df" lineChartType:LineChartType_Step];
     
+    [self.view addSubview:lineView2];
+    LZLineChartSubView *lineView3 = [[LZLineChartSubView alloc]initWithFrame:CGRectMake(210, 300, 200, 200) YdataArray:[@[@1,@2,@3] mutableCopy] XdataArray:[@[@"1",@"2",@"3"] mutableCopy] convertYdataArray:[@[@"1",@"2",@"3"] mutableCopy] XSpacing:3 base:2 convertBase:2 currentTitle:@"df" currentValue:@"df" lineChartType:LineChartType_Bust];
+    
+    [self.view addSubview:lineView3];
+
+
     
 }
 
@@ -101,6 +115,10 @@
         BOOL isEnabled = text.length>0?YES:NO;
         return @(isEnabled);
     }];
+    
+    
+    
+    
     
 }
 

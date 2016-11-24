@@ -17,6 +17,7 @@
 		6A0E9A0D1D8142B500CF9241 /* ReactiveCocoaETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A0C1D8142B500CF9241 /* ReactiveCocoaETests.m */; };
 		6A0E9A181D8142B500CF9241 /* ReactiveCocoaEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A171D8142B500CF9241 /* ReactiveCocoaEUITests.m */; };
 		6A0E9A271D81563200CF9241 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A261D81563200CF9241 /* TwoViewController.m */; };
+		6A3CF04E1DE4585E007A6D32 /* myTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3CF04D1DE4585E007A6D32 /* myTableViewCell.m */; };
 		6A8675881DC332A20079C570 /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8675871DC332A20079C570 /* FViewController.m */; };
 		6A86758E1DC3333C0079C570 /* PhotosGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86758A1DC3333C0079C570 /* PhotosGrid.m */; };
 		6A86758F1DC3333C0079C570 /* PhotosGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86758C1DC3333C0079C570 /* PhotosGridCell.m */; };
@@ -25,6 +26,8 @@
 		6A8675961DC352E60079C570 /* UINavigationItem+CustomBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8675951DC352E60079C570 /* UINavigationItem+CustomBackButton.m */; };
 		6A95E1E51D9510BF0057C163 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95E1E41D9510BF0057C163 /* WKWebViewViewController.m */; };
 		6A95E1E71D95110B0057C163 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95E1E61D95110B0057C163 /* WebKit.framework */; };
+		6AFFFE8E1DD5F422000AE07D /* LZLineChartSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFFE8B1DD5F422000AE07D /* LZLineChartSubView.m */; };
+		6AFFFE8F1DD5F422000AE07D /* LZLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFFE8D1DD5F422000AE07D /* LZLineChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 		6A0E9A191D8142B500CF9241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A0E9A251D81563200CF9241 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		6A0E9A261D81563200CF9241 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		6A3CF04C1DE4585E007A6D32 /* myTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewCell.h; sourceTree = "<group>"; };
+		6A3CF04D1DE4585E007A6D32 /* myTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewCell.m; sourceTree = "<group>"; };
 		6A8675861DC332A20079C570 /* FViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FViewController.h; sourceTree = "<group>"; };
 		6A8675871DC332A20079C570 /* FViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FViewController.m; sourceTree = "<group>"; };
 		6A8675891DC3333C0079C570 /* PhotosGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosGrid.h; sourceTree = "<group>"; };
@@ -77,6 +82,10 @@
 		6A95E1E31D9510BF0057C163 /* WKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewViewController.h; sourceTree = "<group>"; };
 		6A95E1E41D9510BF0057C163 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
 		6A95E1E61D95110B0057C163 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6AFFFE8A1DD5F422000AE07D /* LZLineChartSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLineChartSubView.h; sourceTree = "<group>"; };
+		6AFFFE8B1DD5F422000AE07D /* LZLineChartSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLineChartSubView.m; sourceTree = "<group>"; };
+		6AFFFE8C1DD5F422000AE07D /* LZLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLineChartView.h; sourceTree = "<group>"; };
+		6AFFFE8D1DD5F422000AE07D /* LZLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLineChartView.m; sourceTree = "<group>"; };
 		76D2DE37D2913F73A17C4992 /* Pods-ReactiveCocoaE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaE/Pods-ReactiveCocoaE.debug.xcconfig"; sourceTree = "<group>"; };
 		A5764718EAAC32C5AE040783 /* libPods-ReactiveCocoaE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveCocoaE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DF15FFF7CB435A6F7785D9 /* Pods-ReactiveCocoaE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaE.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaE/Pods-ReactiveCocoaE.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +167,8 @@
 				6A0E99F91D8142B500CF9241 /* ViewController.m */,
 				6A0E9A251D81563200CF9241 /* TwoViewController.h */,
 				6A0E9A261D81563200CF9241 /* TwoViewController.m */,
+				6A3CF04C1DE4585E007A6D32 /* myTableViewCell.h */,
+				6A3CF04D1DE4585E007A6D32 /* myTableViewCell.m */,
 				6A95E1E31D9510BF0057C163 /* WKWebViewViewController.h */,
 				6A95E1E41D9510BF0057C163 /* WKWebViewViewController.m */,
 				6A8675861DC332A20079C570 /* FViewController.h */,
@@ -170,6 +181,10 @@
 				6A86758A1DC3333C0079C570 /* PhotosGrid.m */,
 				6A86758B1DC3333C0079C570 /* PhotosGridCell.h */,
 				6A86758C1DC3333C0079C570 /* PhotosGridCell.m */,
+				6AFFFE8A1DD5F422000AE07D /* LZLineChartSubView.h */,
+				6AFFFE8B1DD5F422000AE07D /* LZLineChartSubView.m */,
+				6AFFFE8C1DD5F422000AE07D /* LZLineChartView.h */,
+				6AFFFE8D1DD5F422000AE07D /* LZLineChartView.m */,
 				6A86758D1DC3333C0079C570 /* PhotosGridCell.xib */,
 				6A0E99FB1D8142B500CF9241 /* Main.storyboard */,
 				6A0E99FE1D8142B500CF9241 /* Assets.xcassets */,
@@ -391,13 +406,16 @@
 				6A0E99FA1D8142B500CF9241 /* ViewController.m in Sources */,
 				6A0E99F71D8142B500CF9241 /* AppDelegate.m in Sources */,
 				6A86758E1DC3333C0079C570 /* PhotosGrid.m in Sources */,
+				6A3CF04E1DE4585E007A6D32 /* myTableViewCell.m in Sources */,
 				6A8675931DC339DE0079C570 /* NewChange.m in Sources */,
 				6A8675961DC352E60079C570 /* UINavigationItem+CustomBackButton.m in Sources */,
 				6A0E99F41D8142B500CF9241 /* main.m in Sources */,
+				6AFFFE8E1DD5F422000AE07D /* LZLineChartSubView.m in Sources */,
 				6A95E1E51D9510BF0057C163 /* WKWebViewViewController.m in Sources */,
 				6A0E9A271D81563200CF9241 /* TwoViewController.m in Sources */,
 				6A86758F1DC3333C0079C570 /* PhotosGridCell.m in Sources */,
 				6A8675881DC332A20079C570 /* FViewController.m in Sources */,
+				6AFFFE8F1DD5F422000AE07D /* LZLineChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
