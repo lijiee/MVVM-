@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,33 +19,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGa-bo-HLJ">
-                        <rect key="frame" x="0.0" y="15" width="129" height="136"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </button>
-                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-u6-dP5">
-                        <rect key="frame" x="114" y="0.0" width="30" height="30"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="30" id="Iml-eV-ePU"/>
-                            <constraint firstAttribute="width" secondItem="BbG-u6-dP5" secondAttribute="height" multiplier="1:1" id="Rfe-li-5HX"/>
-                        </constraints>
+                        <rect key="frame" x="0.0" y="7" width="144" height="136"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </button>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="NGa-bo-HLJ" secondAttribute="trailing" constant="15" id="CyW-Ne-e64"/>
+                <constraint firstAttribute="trailing" secondItem="NGa-bo-HLJ" secondAttribute="trailing" id="CyW-Ne-e64"/>
                 <constraint firstItem="NGa-bo-HLJ" firstAttribute="leading" secondItem="V6W-nG-uJ6" secondAttribute="leading" id="L6d-J1-Wwe"/>
-                <constraint firstAttribute="trailing" secondItem="BbG-u6-dP5" secondAttribute="trailing" id="Tcy-xr-fLp"/>
-                <constraint firstItem="NGa-bo-HLJ" firstAttribute="top" secondItem="V6W-nG-uJ6" secondAttribute="top" constant="15" id="tA3-2e-kUR"/>
-                <constraint firstItem="BbG-u6-dP5" firstAttribute="top" secondItem="V6W-nG-uJ6" secondAttribute="top" id="uhB-u9-2wi"/>
-                <constraint firstAttribute="bottom" secondItem="NGa-bo-HLJ" secondAttribute="bottom" id="zXy-Dg-VDV"/>
+                <constraint firstItem="NGa-bo-HLJ" firstAttribute="top" secondItem="V6W-nG-uJ6" secondAttribute="top" constant="7" id="tA3-2e-kUR"/>
+                <constraint firstAttribute="bottom" secondItem="NGa-bo-HLJ" secondAttribute="bottom" constant="8" id="zXy-Dg-VDV"/>
             </constraints>
             <size key="customSize" width="144" height="151"/>
             <connections>
-                <outlet property="btnDelete" destination="BbG-u6-dP5" id="VWZ-KI-CGy"/>
                 <outlet property="btnPhoto" destination="NGa-bo-HLJ" id="x9n-Qg-syj"/>
-                <outlet property="deleteBtnWidth" destination="Iml-eV-ePU" id="H7p-iJ-FYo"/>
                 <outlet property="rightMargin" destination="CyW-Ne-e64" id="MGK-9y-P9h"/>
                 <outlet property="topMargin" destination="tA3-2e-kUR" id="S0I-nS-3NN"/>
             </connections>

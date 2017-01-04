@@ -18,6 +18,7 @@
 		6A0E9A181D8142B500CF9241 /* ReactiveCocoaEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A171D8142B500CF9241 /* ReactiveCocoaEUITests.m */; };
 		6A0E9A271D81563200CF9241 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E9A261D81563200CF9241 /* TwoViewController.m */; };
 		6A3CF04E1DE4585E007A6D32 /* myTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3CF04D1DE4585E007A6D32 /* myTableViewCell.m */; };
+		6A4945FA1E1C8F790096B0A6 /* MySelectPicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4945F91E1C8F790096B0A6 /* MySelectPicCollectionView.m */; };
 		6A8675881DC332A20079C570 /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8675871DC332A20079C570 /* FViewController.m */; };
 		6A86758E1DC3333C0079C570 /* PhotosGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86758A1DC3333C0079C570 /* PhotosGrid.m */; };
 		6A86758F1DC3333C0079C570 /* PhotosGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A86758C1DC3333C0079C570 /* PhotosGridCell.m */; };
@@ -68,6 +69,8 @@
 		6A0E9A261D81563200CF9241 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		6A3CF04C1DE4585E007A6D32 /* myTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewCell.h; sourceTree = "<group>"; };
 		6A3CF04D1DE4585E007A6D32 /* myTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewCell.m; sourceTree = "<group>"; };
+		6A4945F81E1C8F790096B0A6 /* MySelectPicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySelectPicCollectionView.h; sourceTree = "<group>"; };
+		6A4945F91E1C8F790096B0A6 /* MySelectPicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySelectPicCollectionView.m; sourceTree = "<group>"; };
 		6A8675861DC332A20079C570 /* FViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FViewController.h; sourceTree = "<group>"; };
 		6A8675871DC332A20079C570 /* FViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FViewController.m; sourceTree = "<group>"; };
 		6A8675891DC3333C0079C570 /* PhotosGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosGrid.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				6A0E99F91D8142B500CF9241 /* ViewController.m */,
 				6A0E9A251D81563200CF9241 /* TwoViewController.h */,
 				6A0E9A261D81563200CF9241 /* TwoViewController.m */,
+				6A4945F81E1C8F790096B0A6 /* MySelectPicCollectionView.h */,
+				6A4945F91E1C8F790096B0A6 /* MySelectPicCollectionView.m */,
 				6A3CF04C1DE4585E007A6D32 /* myTableViewCell.h */,
 				6A3CF04D1DE4585E007A6D32 /* myTableViewCell.m */,
 				6A95E1E31D9510BF0057C163 /* WKWebViewViewController.h */,
@@ -291,6 +296,7 @@
 				TargetAttributes = {
 					6A0E99EE1D8142B500CF9241 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6B3968N58N;
 					};
 					6A0E9A071D8142B500CF9241 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -416,6 +422,7 @@
 				6A86758F1DC3333C0079C570 /* PhotosGridCell.m in Sources */,
 				6A8675881DC332A20079C570 /* FViewController.m in Sources */,
 				6AFFFE8F1DD5F422000AE07D /* LZLineChartView.m in Sources */,
+				6A4945FA1E1C8F790096B0A6 /* MySelectPicCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +566,7 @@
 			baseConfigurationReference = 76D2DE37D2913F73A17C4992 /* Pods-ReactiveCocoaE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6B3968N58N;
 				INFOPLIST_FILE = ReactiveCocoaE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lij.ReactiveCocoaE;
@@ -571,6 +579,7 @@
 			baseConfigurationReference = B3DF15FFF7CB435A6F7785D9 /* Pods-ReactiveCocoaE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6B3968N58N;
 				INFOPLIST_FILE = ReactiveCocoaE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lij.ReactiveCocoaE;

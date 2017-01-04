@@ -9,8 +9,13 @@
 #import "TwoViewController.h"
 #import "ReactiveCocoa.h"
 #import "myTableViewCell.h"
-
+#import "MySelectPicCollectionView.h"
+#import <BlocksKit+UIKit.h>
+#import "TZImagePickerController.h"
+#import "UIView+WZLBadge.h"
+#import "NewChange.h"
 @interface TwoViewController ()<UITableViewDelegate,UITableViewDataSource,UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet UIButton *twoButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (weak, nonatomic) IBOutlet UIButton *imgaebutton;
@@ -22,6 +27,8 @@
 @property (nonatomic, assign) CGFloat previousTextViewContentHeight;
 @property (nonatomic, assign) CGFloat contentOffsetY;
 
+@property (weak, nonatomic) IBOutlet MySelectPicCollectionView *myCollectView;
+@property (weak, nonatomic) IBOutlet UIView *myBageView;
 
 @end
 
@@ -42,6 +49,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_imgaebutton bk_addEventHandler:^(id sender) {
+        
+        [self.textview resignFirstResponder];
+        
+        self.collectionViewHeightConstraint.constant = 216;
+        [NewChange showImagePickerFor:self phoneNum:9 videoNum:0 finishPick:^(NSArray *sourceArr, NSArray *assets) {
+            [self.myCollectView configWithData:sourceArr];
+            if (sourceArr.count >0) {
+                [self.myBageView showBadgeWithStyle:WBadgeStyleNumber value:sourceArr.count animationType:WBadgeAnimTypeNone];
+
+            }else{
+                [self.myBageView clearBadge];
+            }
+            
+        }];
+        
+    } forControlEvents:UIControlEventTouchUpInside];
+
     // 1.监听键盘弹出，把inputToolBar（输入工具条）往上移
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kbWillShow:) name:UIKeyboardWillShowNotification object:nil];
     _textview.delegate = self;
@@ -53,7 +78,6 @@
     [UIView animateWithDuration:0.25 animations:^{
         [self.view layoutIfNeeded];
     }];
-
 
 }
 - (void)Sender:(id)sender{
@@ -86,10 +110,12 @@
     CGFloat animationDuration = [[noti.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     // 2.更改inputToolBar 底部约束
     self.inputToolBarBottomConstraint.constant = kbHeight;
+    self.collectionViewHeightConstraint.constant = 0;
    
         [UIView animateWithDuration:animationDuration animations:^{
             [self.view layoutIfNeeded];
         }];
+    
     // 4.把消息现在在顶部
 }
 
@@ -110,7 +136,7 @@
     // 1.计算textView的高度
     CGFloat textViewH = 0;
     CGFloat minHeight = 33 + 3; // textView最小的高度
-    CGFloat maxHeight = 1000 + 3 +10; // textView最大的高度
+    CGFloat maxHeight = 150 + 3 +10; // textView最大的高度
     
     // 获取contentSize 的高度
     CGFloat contentHeight = textView.contentSize.height;
@@ -143,7 +169,6 @@
             if (textView.text.length) {
             }
             // 4.记光标回到原位
-#warning 技巧
             // 下面这几行代码需要写在[self.view layoutIfNeeded]后面，不然系统会自动调整为位置
             if (contentHeight < maxHeight) {
                 [textView setContentOffset:CGPointZero animated:YES];
@@ -180,13 +205,11 @@
     [cell.mytableview setText:self.dataSource[indexPath.row]];
     return cell;
 }
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    if (scrollView.contentOffset.y > 300) {
-        [self.textview resignFirstResponder];
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
+    [self.textview resignFirstResponder];
+    self.collectionViewHeightConstraint.constant = 0;
 
-    }
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

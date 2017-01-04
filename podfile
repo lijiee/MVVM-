@@ -7,4 +7,6 @@ target 'ReactiveCocoaE' do
 pod ‘Masonry’
 pod 'TZImagePickerController'
 pod ‘BlocksKit’
+pod 'WZLBadge'                      , '~> 1.2.5'
+
 end

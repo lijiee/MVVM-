@@ -16,8 +16,8 @@
 @end
 @implementation NewChange
 
-+ (void)showImagePickerFor:(UIView *)view phoneNum:(NSUInteger)pNum videoNum:(NSUInteger)vNum finishPick:(void (^)(NSArray *,NSArray *))finPick{
-    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:pNum columnNumber:3 delegate:self pushPhotoPickerVc:YES];
++ (void)showImagePickerFor:(UIViewController *)view phoneNum:(NSUInteger)pNum videoNum:(NSUInteger)vNum finishPick:(void (^)(NSArray *,NSArray *))finPick{
+    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:pNum columnNumber:3 delegate:nil pushPhotoPickerVc:YES];
     
     [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets,BOOL isOk) {
         finPick(photos,assets);
@@ -31,8 +31,8 @@
 
 }
 
-+ (void)showImagePickerFor:(UIView *)view phoneNum:(NSUInteger)pNum videoNum:(NSUInteger)vNum sourceArr:(NSMutableArray *)sourceArr finishPick:(void (^)(NSArray *,NSArray *))finPick{
-    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:pNum columnNumber:3 delegate:self pushPhotoPickerVc:YES];
++ (void)showImagePickerFor:(UIViewController *)view phoneNum:(NSUInteger)pNum videoNum:(NSUInteger)vNum sourceArr:(NSMutableArray *)sourceArr finishPick:(void (^)(NSArray *,NSArray *))finPick{
+    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:pNum columnNumber:3 delegate:nil pushPhotoPickerVc:YES];
     imagePickerVc.isSelectOriginalPhoto =YES;
     imagePickerVc.selectedAssets = sourceArr;
     
